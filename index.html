@@ -38,7 +38,7 @@
 
       <!-- Sidebar -->
 
-      <div class="h-screen fixed w-96 bg-brighter top-0 hidden" id="sidebar">
+      <div class="h-screen fixed w-96 md:w-3/6 bg-brighter top-0 hidden" id="sidebar">
         <div id="sidebar__close__button" class="absolute right-5 top-4 cursor-pointer">
           <i class="bi bi-x-square-fill text-4xl text-darken"></i>
         </div>
@@ -65,7 +65,7 @@
 
       <!-- Main Section -->
       <section id="main__section" class="h-96 flex flex-col justify-center">
-        <div id="main__text" class="p-10">
+        <div id="main__text" class="p-10 md:w-1/2">
           <h1 class="text-2xl">Lorem ipsum dolor sit amet.</h1>
           <h2 class="text-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -73,9 +73,9 @@
             architecto doloremque cumque quae dolorem. Sequi.
           </h2>
         </div>
-        <div id="main__button" class="flex justify-center">
+        <div id="main__button" class="flex justify-center md:w-1/2">
           <button
-            class="bg-darken hover:bg-normal2 text-brighter px-5 rounded-md h-10"
+            class="bg-darken lg:bg-darkest hover:bg-normal2 text-brighter px-5 rounded-md h-10"
           >
             Más información
           </button>
@@ -86,7 +86,7 @@
       <!-- Mision/Vision Section -->
 
       <section id="mision-vision__section" class="bg-darken">
-        <div id="mision" class="text-brighter p-10 text-center">
+        <div id="mision" class="text-brighter p-10 text-center md:h-80 flex flex-col justify-center">
           <div id="mision__title" class="text-2xl mb-5 font-semibold">
             Misión
           </div>
@@ -96,7 +96,7 @@
             reprehenderit.
           </div>
         </div>
-        <div id="vision" class="text-brighter p-10 text-center">
+        <div id="vision" class="text-brighter p-10 text-center md:h-80 flex flex-col justify-center">
           <div id="mision__title" class="text-2xl mb-5 font-semibold">
             Visión
           </div>
@@ -111,38 +111,38 @@
 
       <!-- Features Section -->
       <section id="features" class="p-10">
-        <div id="card" class="h-48 flex justify-center place-items-center px-5">
-          <div id="card__text" class="text-lg font-semibold">
+        <div id="card" class="h-48 flex md:flex-row-reverse justify-center place-items-center px-5">
+          <div id="card__text" class="text-lg font-semibold mr-6 md:mr-0 md:ml-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             eius fugiat iste. Iure, odio vero!
           </div>
           <div
             id="card__icon"
-            class="h-28 w-80 bg-darken rounded-md flex justify-center place-items-center"
+            class="h-28 w-80 md:w-60 bg-darken rounded-md flex justify-center place-items-center"
           >
             <i class="bi bi-tree-fill text-7xl text-brighter"></i>
           </div>
         </div>
-        <div id="card" class="h-48 flex justify-center place-items-center px-5">
-          <div id="card__text" class="text-lg font-semibold">
+        <div id="card" class="h-48 flex md:flex-row-reverse justify-center place-items-center px-5">
+          <div id="card__text" class="text-lg font-semibold mr-6 md:mr-0 md:ml-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             eius fugiat iste. Iure, odio vero!
           </div>
           <div
             id="card__icon"
-            class="h-28 w-80 bg-darken rounded-md flex justify-center place-items-center"
+            class="h-28 w-80 md:w-60 bg-darken rounded-md flex justify-center place-items-center"
           >
             <i class="bi bi-lightning-charge-fill text-7xl text-brighter"></i>
           </div>
         </div>
-        <div id="card" class="h-48 flex justify-center place-items-center px-5">
-          <div id="card__text" class="text-lg font-semibold">
+        <div id="card" class="h-48 flex md:flex-row-reverse justify-center place-items-center px-5">
+          <div id="card__text" class="text-lg font-semibold mr-6 md:mr-0 md:ml-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             eius fugiat iste. Iure, odio vero!
           </div>
           <div
             id="card__icon"
-            class="h-28 w-80 bg-darken rounded-md flex justify-center place-items-center"
+            class="h-28 w-80 md:w-60 bg-darken rounded-md flex justify-center place-items-center"
           >
             <i class="bi bi-piggy-bank-fill text-7xl text-brighter"></i>
           </div>
@@ -151,11 +151,11 @@
       <!-- End of Features Section -->
 
       <!-- Footer Section -->
-      <footer>
-        <div id="footer__container" class="bg-white">
+      <footer class="bg-white">
+        <div id="footer__container" class="bg-white md:flex md:flex-row-reverse md:place-items-center md:justify-between">
           <div
             id="footer__links"
-            class="flex flex-col place-items-center justify-center h-60"
+            class="flex flex-col place-items-center justify-center h-60 "
           >
             <a href="#" class="py-1 text-lg font-semibold hover:text-darken"
               >Acerca de...</a
@@ -177,7 +177,7 @@
               +502 2315-4568</a
             >
           </div>
-          <div id="footer__social" class="flex justify-center mb-10">
+          <div id="footer__social" class="flex md:flex-col justify-center md:place-items-end mb-10 md:mb-0 md:order-first md:w-28">
             <div
               id="social__icon"
               class="h-12 w-12 rounded-md flex justify-center place-items-center mx-2 cursor-pointer"
@@ -205,9 +205,9 @@
               <!-- <img src="/assets/logo.png" alt="brand-logo"> -->
             </div>
           </div>
-          <div id="footer__copyright" class="text-center mb-5">
-            Copyrigth &copy;
-          </div>
+        </div>
+        <div id="footer__copyright" class="flex justify-center bg-white">
+          Copyrigth &copy;
         </div>
       </footer>
 
