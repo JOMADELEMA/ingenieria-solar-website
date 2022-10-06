@@ -15,7 +15,11 @@ module.exports = {
         'dark': '#FFB200',
         'darken': '#277BC0', 
         'darkest': '#111111'
-      }
+      },
+      height: {
+        "100": "28rem",
+        "0.9": "90%"
+      },
     },
   },
   plugins: [],
